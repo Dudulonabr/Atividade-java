@@ -1,0 +1,40 @@
+//Edaurdo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercício 7 - Números Pares</h1>
+    <div id="resultado"></div>
+    <script>
+      function executarExercicio() {
+           
+            var numero = Number(prompt("Por favor, digite um número:"));
+           
+           
+            var numerosPares = [];
+           
+           
+            for (var i = 1; i <= numero; i++) {
+                if (i % 2 === 0) {
+                    numerosPares.push(i);
+                }
+            }
+           
+           
+            var mensagem = "Números pares de 1 até " + numero + ":<br><br>";
+            mensagem += numerosPares.join(", ");
+           
+            document.getElementById("resultado").innerHTML = "<strong>" + mensagem + "</strong>";
+        }
+        executarExercicio();
+    </script>
+    <div class="btn-voltar-container">
+        <a href="index.html" class="btn-voltar">← Voltar para os Exercícios</a>
+    </div>
+</body>
+</html>
